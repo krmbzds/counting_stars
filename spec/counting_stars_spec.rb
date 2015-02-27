@@ -41,5 +41,4 @@ describe CountingStars do
     end
   end
 
-
 end
