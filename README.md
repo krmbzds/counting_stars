@@ -1,4 +1,5 @@
-# Counting Stars [![Gem Version](https://badge.fury.io/rb/counting_stars.svg)](http://badge.fury.io/rb/counting_stars) [![Build Status](https://travis-ci.org/krmbzds/counting_stars.svg)](https://travis-ci.org/krmbzds/counting_stars)
+# Counting Stars [![Gem Version](https://badge.fury.io/rb/counting_stars.svg)](http://badge.fury.io/rb/counting_stars) [![Build Status](https://travis-ci.org/krmbzds/counting_stars.svg)](https://travis-ci.org/krmbzds/counting_stars) [![Dependency Status](https://gemnasium.com/krmbzds/counting_stars.svg)](https://gemnasium.com/krmbzds/counting_stars)
+
 
 A simple ruby library for extracting rating and metadata information from Google Search.
 
