@@ -1,4 +1,4 @@
-# Counting Stars [![Gem Version](https://badge.fury.io/rb/counting_stars.svg)](http://badge.fury.io/rb/counting_stars)
+# Counting Stars [![Gem Version](https://badge.fury.io/rb/counting_stars.svg)](http://badge.fury.io/rb/counting_stars) [![Build Status](https://travis-ci.org/krmbzds/counting_stars.svg)](https://travis-ci.org/krmbzds/counting_stars)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/counting_stars`. To experiment with that code, run `bin/console` for an interactive prompt.
 
