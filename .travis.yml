@@ -4,3 +4,8 @@ rvm:
 
 before_install:
   - gem install bundler
+
+addons:
+  code_climate:
+    repo_token:
+      secure: "JYgaUE2ngLH97PCXs4eJv0AXm5p/Xa830CwVylz6EeAU4DbYeD2SqIlUdaqtPdSEciK+ZJYcnG4Wv0i81RxfXg4x/ZXA4iZN/+L5uUmQ2+ADKrv5UbUOUK6tW0/WqjS273y01LEpAG0LM5jlMD2uFmbgSfC/yGWxvIonlQW510g="
