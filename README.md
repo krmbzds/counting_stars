@@ -32,11 +32,18 @@ Or install it yourself as:
 ```rb
 require 'counting_stars'
 
+CountingStars::count("Marriott's Grande Ocean", "booking.com")
+=> ["Rating: 9.4/10", "26 reviews"]
+
 CountingStars::count("Marriott's Grande Ocean", "tripadvisor.com")
 => ["Rating: 4.5", "501 reviews", "Price range: $$$"]
 
-CountingStars::count("Marriott's Grande Ocean", "booking.com")
-=> ["Rating: 9.4/10", "26 reviews"]
+# Now you can also use shorthand methods
+CountingStars::booking("Marriott's Grande Ocean")
+=> {:rating=>"9.4", :reviews=>"26"}
+
+CountingStars::tripadvisor("Marriott's Grande Ocean")
+=> {:rating=>"4", :reviews=>"506", :price_range=>"$$$"}
 ```
 
 ### Commmandline
