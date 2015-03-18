@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = 'bin'
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   = ['countingstars']
   spec.require_paths = ['lib']
 
   spec.add_runtime_dependency 'nokogiri', '~> 1.6', '>= 1.6.6.2'

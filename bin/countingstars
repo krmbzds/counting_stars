@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+# encoding: UTF-8
+
+require 'counting_stars'
+
+@help = '
+  Usage
+    countingstars OPTION QUERY
+
+  Options
+   -b, --booking               get metadata from booking.com
+   -t, --tripadvisor           get metadata form tripadvisor.com
+   -h, --help                  show this help
+
+  Examples
+    countingstars -t "Gili Lankanfushi Maldives"
+    countingstars -b "The Royal Savoy Sharm El Sheikh"
+'
+
+def parse_options
+  options = {}
+  case ARGV[0]
+    when '-b', '--booking'
+      options[:b] = ARGV[1]
+    when '-t', '--tripadvisor'
+      options[:t] = ARGV[1]
+    else
+      STDOUT.puts @help
+  end
+  options
+end
+
+case ARGV[0]
+  when '-b', '--booking'
+    STDOUT.puts CountingStars::booking parse_options[:b]
+  when '-t', '--tripadvisor'
+    STDOUT.puts CountingStars::tripadvisor parse_options[:t]
+  else
+    STDOUT.puts @help
+end

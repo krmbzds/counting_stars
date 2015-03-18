@@ -13,7 +13,7 @@ A simple ruby library for extracting rating and metadata information from Google
 
 Add this line to your application's Gemfile:
 
-```ruby
+```rb
 gem 'counting_stars'
 ```
 
@@ -32,23 +32,33 @@ Or install it yourself as:
 ```rb
 require 'counting_stars'
 
-CountingStars::count("Marriott's Grande Ocean", "booking.com")
-=> ["Rating: 9.4/10", "26 reviews"]
-
 CountingStars::count("Marriott's Grande Ocean", "tripadvisor.com")
 => ["Rating: 4.5", "501 reviews", "Price range: $$$"]
 
 # Now you can also use shorthand methods
-CountingStars::booking("Marriott's Grande Ocean")
-=> {:rating=>"9.4", :reviews=>"26"}
+CountingStars::booking("Kayakapı Premium Caves Cappadocia")
+=> {:rating=>"9.4", :reviews=>"181"}
 
-CountingStars::tripadvisor("Marriott's Grande Ocean")
-=> {:rating=>"4", :reviews=>"506", :price_range=>"$$$"}
+CountingStars::tripadvisor("Four Seasons Hotel Istanbul Sultanahmet")
+=> {:rating=>"5", :reviews=>"966", :price_range=>"$$$$"}
 ```
 
 ### Commmandline
 
-:rocket: Coming soon.
+```rb
+  Usage
+    countingstars OPTION QUERY
+
+  Options
+    -b, --booking               get metadata from booking.com
+    -t, --tripadvisor           get metadata from tripadvisor.com
+    -h, --help                  show this help
+
+  Examples
+     countingstars -t "Gili Lankanfushi Maldives"
+     countingstars -b "The Royal Savoy Sharm El Sheikh"
+
+```
 
 ## Contributing
 
